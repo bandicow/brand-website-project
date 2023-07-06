@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 // import logo from "./img/35mm_logo_bg_remove.png";
 import mainImg from "../img/mainpage.jpg";
+import main_logo from "../img/35mm_logo_main-removebg.png";
 
 import "../App.css";
 import Store from "../Store/Store";
@@ -10,7 +11,7 @@ import { Address, Item } from "../model/item";
 import BestMenu from "../BestMenu";
 
 let data: Item = {
-  name: "35mm Products",
+  name: "Momenta Memento",
   category: "tester",
   address: {
     city: "gwangju",
@@ -34,14 +35,14 @@ const MainPage: React.FC = () => {
 
   return (
     <header className="App-header">
-      <img src={mainImg} className="main-img" alt="logo" />
+      <img src={main_logo} className="main-img" alt="logo" />
       <Store info={productInfo} changeAddress={changeAddress} />
-      <BestMenu
-        name="35mm맨투맨"
+      {/* <BestMenu
+        name="Momenta Memento"
         category="상의"
         // price={30000}
         showBestMenuName={showBestMenuName}
-      />
+      /> */}
     </header>
   );
 };

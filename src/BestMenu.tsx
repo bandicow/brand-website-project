@@ -12,7 +12,10 @@ interface OwnProps extends Omit<Menu, "price"> {
 const BestMenu: React.FC<OwnProps> = ({ name, category, showBestMenuName }) => {
   return (
     <div>
-      {name} <p>{category}</p>
+      <span>
+      {name}
+      </span>
+       <p>{category}</p>
     </div>
   );
 };
